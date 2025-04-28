@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Ad Skipper",
+    "version": "1.0",
+    "description": "自动跳过YouTube视频中的广告",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
